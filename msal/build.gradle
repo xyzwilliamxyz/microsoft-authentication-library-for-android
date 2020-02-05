@@ -146,7 +146,7 @@ dependencies {
 
 //    snapshotApi(group: 'com.microsoft.identity', name: 'common', version: '1.0.14-SNAPSHOT', changing: true)
 
-    implementation 'com.microsoft.identity:common:1.0.14-test2'
+    implementation 'com.microsoft.identity:common:1.0.14-test3'
 //    distApi("com.microsoft.identity:common:1.0.14") {
 //        transitive = false
 //    }

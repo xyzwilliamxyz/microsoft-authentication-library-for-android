@@ -133,22 +133,23 @@ dependencies {
     testImplementation "org.mockito:mockito-android:$rootProject.ext.mockitoAndroidVersion"
     testImplementation "org.robolectric:robolectric:$rootProject.ext.robolectricVersion"
     testImplementation "androidx.test:core:$rootProject.ext.androidxTestCoreVersion"
-    testImplementation project(':testutils')
+//    testImplementation project(':testutils')
     // instrumentation test dependencies
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.androidxJunitVersion"
     // Set this dependency to use JUnit 4 rules
     androidTestImplementation "androidx.test:rules:$rootProject.rulesVersion"
     androidTestImplementation "org.mockito:mockito-android:$rootProject.ext.mockitoAndroidVersion"
     // 'local' flavor dependencies
-    localApi(project(":common")) {
-        transitive = false
-    }
+//    localApi(project(":common")) {
+//        transitive = false
+//    }
 
-    snapshotApi(group: 'com.microsoft.identity', name: 'common', version: '1.0.14-SNAPSHOT', changing: true)
+//    snapshotApi(group: 'com.microsoft.identity', name: 'common', version: '1.0.14-SNAPSHOT', changing: true)
 
-    distApi("com.microsoft.identity:common:1.0.14") {
-        transitive = false
-    }
+    implementation 'com.microsoft.identity:common:1.0.14-test2'
+//    distApi("com.microsoft.identity:common:1.0.14") {
+//        transitive = false
+//    }
 }
 
 def configDir = new File(buildscript.sourceFile.parentFile.parentFile, 'config')
